@@ -1,0 +1,118 @@
+/* 1. Reset Global - Remove espaços em branco do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Fundo Geral da Página */
+body {
+    background-color: #121212; /* Fundo super escuro, quase preto */
+    color: #e0e0e0; /* Texto em cinza claro para não cansar a vista */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. Container e Título */
+.container {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.tit {
+    margin-left: 7.9rem;
+    text-align: center;
+    color: #00e5ff; /* Azul Ciano vibrante para destaque */
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* 4. Estrutura do Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+/* 5. Card do Formulário (O quadro em volta dos inputs) */
+.div_form {
+    width: 100%;
+    max-width: 450px;
+    background-color: #1e1e1e; /* Um tom de cinza ligeiramente mais claro que o body */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6); /* Sombra preta para dar profundidade */
+    border: 1px solid #333;
+}
+
+/* 6. Labels (Textos acima dos campos) */
+.div_form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #a0a0a0; 
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Removendo a margem do primeiro label para alinhamento */
+.div_form label:first-child {
+    margin-top: 0;
+}
+
+/* 7. Inputs (Campos de digitação) */
+.form-control {
+    width: 100%;
+    padding: 14px;
+    background-color: #121212; /* Fundo do input escuro igual ao body */
+    color: #ffffff; /* Texto digitado em branco puro */
+    border: 1px solid #444; /* Borda sutil */
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: #666; /* Cor do texto de dica (placeholder) */
+}
+
+/* Efeito ao clicar no Input */
+.form-control:focus {
+    outline: none;
+    border-color: #00e5ff; /* Borda acende em ciano */
+    box-shadow: 0 0 0 3px rgba(0, 229, 255, 0.15); /* "Aura" ao redor do campo */
+}
+
+/* 8. Botão de Salvar */
+.btn {
+    width: 100%;
+    max-width: 450px; /* Mesma largura do formulário */
+    margin-top: 25px;
+    padding: 16px;
+    background-color: #00e5ff; /* Fundo ciano */
+    color: #121212; /* Texto preto para dar alto contraste com o fundo claro do botão */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse no botão */
+.btn:hover {
+    background-color: #00b8cc; /* Fica ligeiramente mais escuro */
+    transform: translateY(-2px); /* Dá um pulinho pra cima */
+    box-shadow: 0 8px 20px rgba(0, 229, 255, 0.3); /* Acende uma sombra ciano */
+}

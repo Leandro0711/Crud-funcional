@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO</title>
+</head>
+<body>
+        <app-menu></app-menu>
+
+        <div class="container">
+            <h1 class="tit">cadastro de alunos</h1>
+        </div>
+
+        <form #cadastro_alunos="ngForm" method="post">
+            <div class="div_form">
+                <label for="ra">registro academico</label>
+                <input type="text" class="form-control" name="ra" [(ngModel)]="aluno.ra" placeholder="digite seu registro">
+
+                <label for="nome">nome</label>
+                <input type="text" class="form-control" name="nome" [(ngModel)]="aluno.nome" placeholder="digite seu nome">
+
+                <label for="turma">turma</label>
+                <input type="text" class="form-control" name="turma" [(ngModel)]="aluno.turma" placeholder="digite sua turma">
+
+                <label for="sala">sala</label>
+                <input type="text" class="form-control" name="sala" [(ngModel)]="aluno.sala" placeholder="digite sua sala">
+
+                <label for="periodo">período</label>
+                <input type="text" class="form-control" name="periodo" [(ngModel)]="aluno.periodo" placeholder="digite seu periodo">
+            </div>
+            
+            <button type="button" class="btn" (click)="salvar()">salvar</button>
+
+        </form>
+    </body>
+</html>
